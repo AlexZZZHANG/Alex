@@ -1,0 +1,142 @@
+*{
+	 margin: 0px;
+	 padding: 0px;
+}
+body{
+	background-color: #eaeaea;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 1200px;
+}
+.header{
+	height: 56px;
+	background-color: #69836b;
+}
+.header ul{
+display: flex;
+justify-content: flex-end;
+padding-left: 187px;
+
+}
+.header ul li{
+	list-style: none;
+	padding-top: 15px;
+	padding-right: 110px;
+	color: aliceblue;
+}
+.header ul li a{
+	text-decoration: none;
+	color: aliceblue;
+	font-size: 18px;
+}
+.header ul li a:hover{
+	text-decoration: underline;
+	color: darkgreen;
+}
+.no-boxshadow{
+	margin-right: 50px;
+}
+.search-box{
+	width: 220px;
+}
+#bao{					
+	width: 1200px;
+	height: 600px;
+	overflow: hidden;
+}
+#photo {			/*图片轮播*/
+	width: 6000px;
+	animation: switch 15s ease-out infinite;/*  某个元素应用了一个名为 "switch" 的动画效果，该动画将持续15秒，并且按照 ease-out 曲线进行速度变化，而且会循环播放，不断重复整个动画过程  */
+}
+#photo img {
+	float: left;
+	width: 1200px;
+	height: 600px;
+}
+@keyframes switch {
+	0%, 5% {
+		margin-left: 0;
+	}
+	20%, 30% {
+		margin-left: -1200px;
+	}
+	40%, 55% {
+		margin-left: -2400px;
+	}
+	60%, 75% {
+		margin-left: -3600px;
+	}
+	85%, 100% {
+		margin-left: -4800px;
+	}
+}
+.con{
+	text-align: center;
+	padding-top: 20px;
+	width: 120px;
+	height: 60px;
+	margin: auto;
+	border-bottom: #69836B 5px solid;
+}
+.con h2{
+	color: #69836b;
+}
+.con h2:hover{
+	color: darkgoldenrod;
+}
+.con p{
+	color: #69836b;
+}
+.tent{
+	width: 1200px;
+	height: 200px;
+}
+.tent img{
+	float: left;
+	width: 280px;
+	height: 200px;
+	margin: 10px 100px 0 100px;
+}
+.tent p{
+	display: inline-block;
+	float: left;
+	width: 700px;
+	height: 200px;
+	padding-top: 20px;
+	font-size: 22px;
+	line-height: 1.6em;
+}
+.tent-p{
+	width: 1200px;
+	height: 180px;
+}
+.tent-p p{
+	display: inline-block;
+	text-indent: 2em;
+	padding-top: 20px;
+	font-size: 22px;
+	line-height: 1.6em;
+}
+.tent1{
+	width: 1200px;
+	height: 200px;
+}
+.tent1 p{
+	display: inline-block;
+	text-indent: 2em;
+	padding-top: 20px;
+	font-size: 22px;
+	line-height: 1.6em;
+	color: #69836B;
+}
+.fotter{
+	background-color: #69836b;
+	height: 60px;
+	margin-top: 20px;
+	text-align: center;
+}
+.fotter p{
+	color: aliceblue;
+	padding-top: 18px;
+}

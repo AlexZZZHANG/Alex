@@ -1,0 +1,120 @@
+*{
+	 margin: 0px;
+	 padding: 0px;
+}
+body{
+	background-color: #eaeaea;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 1200px;
+}
+.header{
+	height: 56px;
+	background-color: #69836b;
+}
+.header ul{
+display: flex;
+justify-content: flex-end;
+padding-left: 187px;
+
+}
+.header ul li{
+	list-style: none;
+	padding-top: 15px;
+	padding-right: 110px;
+	color: aliceblue;
+}
+.header ul li a{
+	text-decoration: none;
+	color: aliceblue;
+	font-size: 18px;
+}
+.header ul li a:hover{
+	text-decoration: underline;
+	color: darkgreen;
+}
+.no-boxshadow{
+	margin-right: 50px;
+}
+.search-box{
+	width: 220px;
+}
+#bao{					
+	width: 1200px;
+	height: 600px;
+	overflow: hidden;
+}
+#photo {			/*图片轮播*/
+	width: 6000px;
+	animation: switch 15s ease-out infinite;/*  某个元素应用了一个名为 "switch" 的动画效果，该动画将持续15秒，并且按照 ease-out 曲线进行速度变化，而且会循环播放，不断重复整个动画过程  */
+}
+#photo img {
+	float: left;
+	width: 1200px;
+	height: 600px;
+}
+@keyframes switch {
+	0%, 5% {
+		margin-left: 0;
+	}
+	20%, 30% {
+		margin-left: -1200px;
+	}
+	40%, 55% {
+		margin-left: -2400px;
+	}
+	60%, 75% {
+		margin-left: -3600px;
+	}
+	85%, 100% {
+		margin-left: -4800px;
+	}
+}
+.content h2{
+	color: #69836b;
+	line-height: 60px;
+	text-indent: 2em;
+}
+
+.item{
+	float:left;
+	width:390px;
+	height:400px;
+	text-align:center;/*文字水平居中*/
+	margin-right:10px;
+	margin-top:2px;
+	background-color:#FFF;
+	position:relative;
+	top:0px;
+	overflow:hidden;
+	transition: all .5s;/*Css3新增动画属性：过渡，all(默认值)指所有属性改变，整个转换过程在0.5s内完成。*/
+	}
+.item .comment{
+	position:absolute;/*绝对定位*/
+	bottom:-100px;
+	width:100%;/*宽度是父元素宽度的100%*/
+	height:100px;
+	background-color: #006400;
+	transition:all .5s;}
+.item .comment .detail{
+	margin-top:10px;
+	color:#FFF;
+	font-size:24px;}
+.item:hover{
+	top:-3px;
+	box-shadow:0 0 15px #999;
+	cursor:pointer;}
+/*当鼠标悬停在类名为item的元素上时，该元素的类名为comment的子元素绝对定位，其底部与父元素底部对齐*/
+.item:hover .comment{
+	bottom:0px;}
+	.fotter{
+		background-color: #69836b;
+		height: 60px;
+		margin-top: 1220px;
+		text-align: center;
+	}
+	.fotter p{
+		color: aliceblue;
+		padding-top: 18px;
+	}
